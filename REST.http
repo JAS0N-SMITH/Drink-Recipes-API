@@ -1,0 +1,50 @@
+POST http://localhost:8080/api/v1/drinks/
+User-Agent: vscode-restclient
+Content-Type: application/json
+
+{
+    "name": "Test2",
+    "ingredients": [
+        {
+            "quantity": 2.0,
+            "unitOfMeasurement": "OUNCE",
+            "name": "rum",
+            "recommended": null
+        },
+        {
+            "quantity": 0.75,
+            "unitOfMeasurement": "OUNCE",
+            "name": "orgeat",
+            "recommended": null
+        },
+        {
+            "quantity": 0.75,
+            "unitOfMeasurement": "OUNCE",
+            "name": "lime juice",
+            "recommended": null
+        },
+        {
+            "quantity": 0.25,
+            "unitOfMeasurement": "OUNCE",
+            "name": "simple syrup",
+            "recommended": null
+        },
+        {
+            "quantity": 1.0,
+            "unitOfMeasurement": "OUNCE",
+            "name": "orange curaçao",
+            "recommended": [
+                "Pierre Ferrand Dry Curacao",
+                "Cointreau Triple Sec Orange Liqueur"
+            ]
+        }
+    ],
+    "created": "2022-05-30T18:01:43.387"
+}
+
+### Get
+GET  http://localhost:8080/api/v1/drinks/
+User-Agent: vscode-restclient
+
+### Delete
+DELETE http://localhost:8080/api/v1/drinks/6295337c405513122a29f4e8
